@@ -1,4 +1,11 @@
 print("Hello")
+
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def home():
+    return "I'm a Flask app!"
+
 KAIKEI_DATA = [
     {"date": "2026-10-05", "kind": "収入", "item": "会費", "amount": 3000},
     {"date": "2026-10-06", "kind": "収入", "item": "会費", "amount": 3000},
