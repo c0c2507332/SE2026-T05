@@ -1,4 +1,5 @@
 print("Hello")
+print("ohayo")
 
 from flask import Flask
 app = Flask(__name__)
@@ -28,3 +29,4 @@ def kaikei():
     </table>
     <p>現在の残高：<b>{balance:,}円</b></p>
     """
+    
